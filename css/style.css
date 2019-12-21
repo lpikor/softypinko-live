@@ -219,20 +219,20 @@ body {
     .container {
       padding: 100px 0; } }
 
-.welcome__container {
-  position: relative;
-  top: 50px; }
-
-.welcome__btn {
-  margin-top: 15px; }
-
-@media (min-height: 350px) {
+.welcome {
+  padding-top: 15px; }
   .welcome__container {
-    position: static; } }
-
-@media (min-height: 650px) {
+    margin-top: 60px; }
   .welcome__btn {
-    margin-top: 25px; } }
+    margin-top: 15px; }
+  @media (min-height: 350px) {
+    .welcome__container {
+      margin-top: 0; } }
+  @media (min-height: 650px) {
+    .welcome__container {
+      padding-top: 25px; }
+    .welcome__btn {
+      margin-top: 25px; } }
 
 .features__container {
   padding: 0; }
@@ -248,13 +248,8 @@ body {
 
 @media (min-width: 1024px) {
   .features .features__container {
-    margin-top: 50px; } }
-  @media (min-width: 1024px) and (min-height: 350px) {
-    .features .features__container {
-      margin-top: calc(-0.5 * 100px); } }
-  @media (min-width: 1024px) and (min-height: 500px) {
-    .features .features__container {
-      margin-top: calc(-1 * 100px); } }
+    margin-top: 50px;
+    margin-top: 0; } }
   @media (min-width: 1024px) and (min-height: 650px) {
     .features .features__container {
       margin-top: calc(-1.5 * 100px); } }
@@ -554,10 +549,12 @@ body {
     max-width: initial; } }
 
 @media (min-width: 768px) {
-  .welcome__strong {
-    display: inline; }
-    .welcome__strong::before {
-      content: "\A"; } }
+  .welcome {
+    padding-top: 25px; }
+    .welcome__strong {
+      display: inline; }
+      .welcome__strong::before {
+        content: "\A"; } }
 
 @media (min-height: 350px) {
   .welcome {
@@ -570,6 +567,8 @@ body {
     height: 75px; } }
 
 @media (min-height: 650px) {
+  .welcome__container {
+    margin-top: 0; }
   .welcome::after {
     height: 100px; } }
 
